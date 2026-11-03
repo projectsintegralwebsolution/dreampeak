@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 70" width="220" height="70">
+  <rect width="220" height="70" rx="4" fill="#007934"/>
+  <text x="20" y="46" font-family="'Futura', 'Century Gothic', Arial, sans-serif" font-size="26" font-weight="700" fill="#ffffff" letter-spacing="1.5">METR</text>
+  <circle cx="123" cy="38" r="13" fill="none" stroke="#ffffff" stroke-width="4"/>
+  <circle cx="123" cy="38" r="8" fill="#E37222"/>
+  <circle cx="121" cy="36" r="2.5" fill="#ffffff"/>
+  <circle cx="126" cy="40" r="1.8" fill="#ffffff"/>
+  <circle cx="120" cy="41" r="1.5" fill="#ffffff"/>
+  <text x="142" y="46" font-family="'Futura', 'Century Gothic', Arial, sans-serif" font-size="26" font-weight="700" fill="#ffffff" letter-spacing="1.5">POLIS</text>
+  <text x="110" y="60" font-family="Arial, sans-serif" font-size="7" font-weight="600" fill="#A4D792" text-anchor="middle" letter-spacing="2">HEALTHCARE</text>
+</svg>

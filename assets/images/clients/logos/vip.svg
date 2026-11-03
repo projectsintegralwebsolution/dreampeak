@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 80" width="200" height="80">
+  <rect x="2" y="2" width="196" height="76" rx="6" fill="#ffffff" stroke="#E5E7EB" stroke-width="1.5"/>
+  <path d="M35 18 L165 18 L155 56 L45 56 Z" fill="#D91C24"/>
+  <text x="100" y="48" font-family="'Arial Black', Impact, sans-serif" font-size="34" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="4">VIP</text>
+  <text x="100" y="70" font-family="'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="800" fill="#0A3871" text-anchor="middle" letter-spacing="6">LOUNGE</text>
+</svg>

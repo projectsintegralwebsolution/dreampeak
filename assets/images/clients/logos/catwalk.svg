@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 80" width="220" height="80">
+  <rect width="220" height="80" rx="6" fill="#1B4332"/>
+  <text x="110" y="50" font-family="'Century Gothic', 'Didot', 'Playfair Display', serif" font-size="34" font-weight="300" fill="#ffffff" text-anchor="middle" letter-spacing="2">Catwalk</text>
+  <line x1="52" y1="44" x2="64" y2="44" stroke="#ffffff" stroke-width="2.5"/>
+  <line x1="136" y1="44" x2="146" y2="44" stroke="#ffffff" stroke-width="2.5"/>
+  <text x="110" y="67" font-family="'Helvetica Neue', Arial, sans-serif" font-size="8.5" font-weight="600" fill="#80ED99" text-anchor="middle" letter-spacing="4">FOOTWEAR &amp; ACCESSORIES</text>
+</svg>

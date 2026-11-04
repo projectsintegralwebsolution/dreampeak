@@ -1944,13 +1944,13 @@ ul, ol {
 }
 
 .client-card-thumb {
-  height: 140px;
-  background-color: #F8F9FA;
+  height: 135px;
+  background-color: #FFFFFF;
   border-bottom: 1px solid #EEEEEE;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 24px 28px;
+  padding: 16px 20px;
   position: relative;
   overflow: hidden;
   transition: background-color var(--transition-normal);
@@ -1961,16 +1961,28 @@ ul, ol {
 }
 
 .client-card-thumb img {
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 85%;
+  max-height: 74px;
   width: auto;
   height: auto;
   object-fit: contain;
+  border-radius: 4px;
   transition: transform var(--transition-normal);
 }
 
 .client-showcase-card:hover .client-card-thumb img {
-  transform: scale(1.08);
+  transform: scale(1.05);
+}
+
+/* Specific shape visual weight balancing */
+.client-card-thumb img.logo-square {
+  max-height: 66px;
+  max-width: 66px;
+}
+
+.client-card-thumb img.logo-wide {
+  max-height: 58px;
+  max-width: 88%;
 }
 
 .client-card-info {
@@ -2055,16 +2067,16 @@ ul, ol {
 }
 
 .client-logo-thumb {
-  height: 64px;
+  height: 72px;
   width: 100%;
   background-color: #FFFFFF;
   border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px 16px;
+  padding: 8px 14px;
   margin-bottom: 14px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   transition: transform var(--transition-fast);
 }
 
@@ -2073,11 +2085,22 @@ ul, ol {
 }
 
 .client-logo-thumb img {
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 86%;
+  max-height: 52px;
   width: auto;
   height: auto;
   object-fit: contain;
+  border-radius: 3px;
+}
+
+.client-logo-thumb img.logo-square {
+  max-height: 46px;
+  max-width: 46px;
+}
+
+.client-logo-thumb img.logo-wide {
+  max-height: 44px;
+  max-width: 90%;
 }
 
 .client-brand-badge {
@@ -2209,13 +2232,13 @@ ul, ol {
 .modal-logo-wrapper {
   width: 130px;
   height: 72px;
-  background-color: #F8F9FA;
+  background-color: #FFFFFF;
   border: 1px solid #E5E7EB;
-  border-radius: 4px;
+  border-radius: 6px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px 14px;
+  padding: 8px 12px;
   flex-shrink: 0;
 }
 
@@ -2599,6 +2622,21 @@ ul, ol {
   line-height: 1.3;
 }
 
+.gallery-item.item-animating {
+  animation: galleryFadeUp 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes galleryFadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* Lightbox Modal */
 .lightbox-modal {
   position: fixed;
@@ -2660,6 +2698,15 @@ ul, ol {
   margin-top: 4px;
 }
 
+.lightbox-counter {
+  font-family: var(--font-accent);
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  color: var(--text-secondary-light);
+  text-transform: uppercase;
+  margin-top: 6px;
+}
+
 .lightbox-btn {
   background-color: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.15);
@@ -2699,6 +2746,92 @@ ul, ol {
 
 .lightbox-next {
   right: 24px;
+}
+
+/* Gallery View More & Counter Bar */
+.gallery-view-more-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 48px;
+  text-align: center;
+}
+
+.gallery-count-status {
+  font-family: var(--font-accent);
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+  color: var(--text-secondary-light);
+  text-transform: uppercase;
+}
+
+.gallery-count-status .highlight-num {
+  color: var(--color-red);
+  font-weight: 700;
+}
+
+.view-more-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background-color: var(--color-charcoal);
+  border: 1px solid var(--border-on-dark);
+  color: var(--color-white);
+  font-family: var(--font-accent);
+  font-size: 0.88rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 14px 36px;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  position: relative;
+  overflow: hidden;
+}
+
+.view-more-btn:hover {
+  background-color: var(--color-red);
+  border-color: var(--color-red);
+  color: var(--color-white);
+  box-shadow: 0 6px 20px var(--color-red-glow);
+  transform: translateY(-2px);
+}
+
+.view-more-btn svg {
+  transition: transform var(--transition-fast);
+}
+
+.view-more-btn:hover svg {
+  transform: translateY(3px);
+}
+
+.view-more-spinner {
+  display: none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top-color: var(--color-white);
+  border-radius: 50%;
+  animation: spinnerRotate 0.6s linear infinite;
+}
+
+.view-more-btn.loading .view-more-spinner {
+  display: inline-block;
+}
+
+.view-more-btn.loading svg,
+.view-more-btn.loading .btn-text {
+  opacity: 0.6;
+}
+
+@keyframes spinnerRotate {
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /* ==========================================================================
@@ -3429,5 +3562,86 @@ textarea.form-control {
 
   .states-badges-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+/* Client Logo Responsive Tweaks */
+@media (max-width: 768px) {
+  .client-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .clients-logo-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 16px;
+  }
+  .client-card-thumb {
+    height: 125px;
+    padding: 14px 16px;
+  }
+  .client-card-thumb img {
+    max-height: 68px;
+  }
+  .client-logo-thumb {
+    height: 64px;
+    padding: 6px 10px;
+  }
+  .client-logo-thumb img {
+    max-height: 44px;
+  }
+}
+
+@media (max-width: 480px) {
+  .clients-logo-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 12px;
+  }
+  .client-logo-card {
+    padding: 18px 12px;
+  }
+  .client-brand-name {
+    font-size: 1.05rem;
+  }
+}
+
+/* Gallery Responsive Optimization */
+@media (max-width: 768px) {
+  .gallery-item {
+    height: 280px;
+  }
+  .lightbox-nav {
+    width: 44px;
+    height: 44px;
+  }
+  .lightbox-prev {
+    left: 12px;
+  }
+  .lightbox-next {
+    right: 12px;
+  }
+  .lightbox-close {
+    top: 16px;
+    right: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-item {
+    height: 240px;
+  }
+  .gallery-filter-bar {
+    gap: 8px;
+    margin-bottom: 32px;
+  }
+  .filter-btn {
+    padding: 8px 16px;
+    font-size: 0.78rem;
+  }
+  .lightbox-stage img {
+    max-height: 68vh;
+  }
+  .view-more-btn {
+    width: 100%;
+    max-width: 300px;
   }
 }

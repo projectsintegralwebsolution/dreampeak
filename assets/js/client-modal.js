@@ -11,7 +11,7 @@
   const CLIENTS_DATABASE = {
     levis: {
       name: "Levi's",
-      logo: "assets/images/clients/logos/levis.svg",
+      logo: "assets/images/clients/logos/levis.png",
       badge: "6+ Stores",
       sector: "Global Retail & Denim Lifestyle Flagships",
       projectImage: "assets/images/clients/levis.jpg",
@@ -35,7 +35,7 @@
 
     ashika: {
       name: "Ashika Fashion Wear",
-      logo: "assets/images/clients/logos/ashika.svg",
+      logo: "assets/images/clients/logos/ashika.jpg",
       badge: "55+ Stores",
       sector: "Ethnic Designer Apparel & Saree Showrooms",
       projectImage: "assets/images/clients/ashika.jpg",
@@ -59,7 +59,7 @@
 
     vip: {
       name: "VIP Lounge",
-      logo: "assets/images/clients/logos/vip.svg",
+      logo: "assets/images/clients/logos/vip.png",
       badge: "50+ Stores",
       sector: "Travel Gear, Luggage & Accessories Retail Chain",
       projectImage: "assets/images/clients/vip.jpg",
@@ -83,7 +83,7 @@
 
     metropolis: {
       name: "Metropolis Healthcare",
-      logo: "assets/images/clients/logos/metropolis.svg",
+      logo: "assets/images/clients/logos/metropolis.jpg",
       badge: "20+ Labs",
       sector: "Clinical Pathology & Diagnostic Healthcare Centers",
       projectImage: "assets/images/clients/metropolis.jpg",
@@ -107,7 +107,7 @@
 
     catwalk: {
       name: "Catwalk",
-      logo: "assets/images/clients/logos/catwalk.svg",
+      logo: "assets/images/clients/logos/catwalk.png",
       badge: "6+ Stores",
       sector: "Luxury Women's Footwear & Fashion Accessories",
       projectImage: "assets/images/clients/catwalk.jpg",
@@ -131,7 +131,7 @@
 
     gangar: {
       name: "Gangar Eyenation",
-      logo: "assets/images/clients/logos/gangar.svg",
+      logo: "assets/images/clients/logos/gangar.jpg",
       badge: "5+ Stores",
       sector: "Luxury Eyewear & Optometry Flagships",
       projectImage: "assets/images/clients/gangar.jpg",
@@ -155,7 +155,7 @@
 
     ddecor: {
       name: "D'Decor",
-      logo: "assets/images/clients/logos/ddecor.svg",
+      logo: "assets/images/clients/logos/ddecor.png",
       badge: "3+ Stores",
       sector: "Premier Home Fabrics, Furnishings & Curtains",
       projectImage: "assets/images/clients/ddecor.jpg",
@@ -179,7 +179,7 @@
 
     sukhothai: {
       name: "Sukho Thai",
-      logo: "assets/images/clients/logos/sukhothai.svg",
+      logo: "assets/images/clients/logos/sukhothai.png",
       badge: "3+ Stores",
       sector: "Luxury Traditional Thai Spa & Wellness Sanctuaries",
       projectImage: "assets/images/clients/sukhothai.jpg",
@@ -203,7 +203,7 @@
 
     zouk: {
       name: "Zouk",
-      logo: "assets/images/clients/logos/zouk.svg",
+      logo: "assets/images/clients/logos/zouk.jpg",
       badge: "Handcrafted",
       sector: "Modern Indian Lifestyle, Vegan Bags & Footwear",
       projectImage: "assets/images/clients/zouk.jpg",
@@ -227,7 +227,7 @@
 
     carlton: {
       name: "Carlton",
-      logo: "assets/images/clients/logos/carlton.svg",
+      logo: "assets/images/clients/logos/carlton.png",
       badge: "Premium",
       sector: "British Heritage Travel Gear & Business Luggage",
       projectImage: "assets/images/clients/carlton.jpg",
@@ -251,7 +251,7 @@
 
     jashn: {
       name: "Jashn",
-      logo: "assets/images/clients/logos/jashn.svg",
+      logo: "assets/images/clients/logos/jashn.png",
       badge: "Ethnic",
       sector: "Luxury Ethnic Wear & Bridal Couture Showrooms",
       projectImage: "assets/images/clients/jashn.jpg",
@@ -275,7 +275,7 @@
 
     almostgods: {
       name: "Almost Gods",
-      logo: "assets/images/clients/logos/almostgods.svg",
+      logo: "assets/images/clients/logos/almostgods.png",
       badge: "Artisanal",
       sector: "Brutalist Architectural Concept Fashion Boutiques",
       projectImage: "assets/images/clients/almostgods.jpg",
@@ -299,7 +299,7 @@
 
     gili: {
       name: "Gili World",
-      logo: "assets/images/clients/logos/gili.svg",
+      logo: "assets/images/clients/logos/gili.jpg",
       badge: "Jewellery",
       sector: "Diamond Jewellery & Luxury Retail Boutiques",
       projectImage: "assets/images/clients/gili.jpg",
@@ -323,7 +323,7 @@
 
     w: {
       name: "W Women's Wear",
-      logo: "assets/images/clients/logos/w.svg",
+      logo: "assets/images/clients/logos/w.jpg",
       badge: "Fashion",
       sector: "Contemporary Indian Women's Fashion & Apparel",
       projectImage: "assets/images/gallery/retail-againvintage.jpg",
@@ -443,7 +443,7 @@
 
     againvintage: {
       name: "Again? Vintage",
-      logo: "assets/images/clients/logos/againvintage.svg",
+      logo: "assets/images/clients/logos/againvintage.png",
       badge: "Streetwear",
       sector: "Urban Vintage, Streetwear & Thrift Boutiques",
       projectImage: "assets/images/clients/againvintage.jpg",

@@ -4,3 +4,11 @@ content.zip
 
 /content.zip
 /content.zip
+
+# Ignore uploaded ZIP archives
+*.zip
+
+# Temporary uploaded image folders
+*.zip
+/website photos-20261103T123313Z-1-001/
+/new images/

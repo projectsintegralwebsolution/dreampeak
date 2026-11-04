@@ -6,7 +6,7 @@
   <title>Project Gallery | DREAM PEAK - Architecture & Interior Portfolio</title>
   <meta name="description" content="View Dream Peak's architectural, interior design and turnkey project portfolio across Retail, Commercial, Corporate, and Residential spaces.">
   <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="icon" type="image/png" href="assets/images/logo/logo.png">
+  <link rel="icon" type="image/png" href="assets/images/logo/favicon.png">
 </head>
 <body>
 
@@ -185,7 +185,7 @@
         </div>
 
         <!-- Grid of Project Photos -->
-        <div class="gallery-grid">
+        <div class="gallery-grid" id="galleryGrid">
           <!-- Retail 1: Levi's -->
           <div class="gallery-item" data-category="retail">
             <img src="assets/images/gallery/retail-levis-1.jpg" alt="Levi's Flagship Store Design">
@@ -321,6 +321,18 @@
             </div>
           </div>
         </div>
+
+        <!-- View More Button & Status Container -->
+        <div class="gallery-view-more-wrap" id="viewMoreWrap">
+          <div class="gallery-count-status" id="galleryCountStatus"></div>
+          <button type="button" class="view-more-btn" id="viewMoreBtn" aria-label="Load more gallery projects">
+            <span class="btn-text">View More Projects</span>
+            <span class="view-more-spinner" aria-hidden="true"></span>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+        </div>
       </div>
     </section>
 
@@ -372,6 +384,7 @@
     <div class="lightbox-caption-bar">
       <div class="lightbox-title" id="lightboxTitle"></div>
       <div class="lightbox-category" id="lightboxCategory"></div>
+      <div class="lightbox-counter" id="lightboxCounter"></div>
     </div>
   </div>
 
@@ -677,6 +690,7 @@
   </footer>
 
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/gallery-data.js"></script>
   <script src="assets/js/gallery-modal.js"></script>
 </body>
 </html>
